@@ -1,0 +1,46 @@
+:root{
+  --maroon-950:#3f0004; --maroon-900:#520007; --red-800:#7a000d; --red-700:#a30011;
+  --orange-700:#a02d03; --orange-600:#c43a05; --orange-500:#f97316; --orange-400:#ff8a2a;
+  --amber-400:#fdcc00; --amber-500:#ecb400; --cream:#fbf6e8; --ink:#14090a;
+  --ok:#2e7d32; --warn:#e6b800; --danger:#d10f1f; --blue:#0a6cff; --sky:#9fd3f7;
+  --font-head:'Poppins',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --font-body:'Nunito',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font-body);color:var(--ink);line-height:1.5}
+img,svg{max-width:100%}
+a{color:inherit}
+button,input,select,textarea{font:inherit}
+.ico{flex:none}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--amber-400);outline-offset:2px}
+
+.logo{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;
+  font:italic 800 1.9rem/1 var(--font-head);letter-spacing:.03em}
+.logo img{height:46px;width:auto}
+
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;padding:10px 22px;
+  font:600 .95rem var(--font-head);letter-spacing:.04em;cursor:pointer;text-decoration:none;color:#fff;
+  background:var(--orange-500);transition:filter .15s,transform .15s}
+.btn:hover{filter:brightness(1.08)}
+.btn:active{transform:translateY(1px)}
+.btn-blue{background:var(--blue)}
+.btn-ghost{background:#fff;color:var(--ink);border:1px solid #bbb}
+.btn-danger{background:var(--danger)}
+
+.badge{display:inline-block;min-width:84px;text-align:center;padding:2px 14px;border-radius:999px;
+  font:600 .85rem var(--font-head);color:#fff}
+.badge.aman{background:var(--ok)}
+.badge.waspada{background:var(--warn);color:#3b2a00}
+.badge.bahaya{background:var(--danger)}
+
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,24px);opacity:0;pointer-events:none;
+  background:#222;color:#fff;padding:12px 22px;border-radius:12px;font:600 .95rem var(--font-head);z-index:100;
+  transition:opacity .2s,transform .2s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.toast.error{background:var(--danger)}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
