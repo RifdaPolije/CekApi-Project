@@ -33,6 +33,9 @@ $tim = [
     ['Safina Rahmatus Sa’diyah', 'E43252017', '@starrvyaa_'],
     ['Rifda Aprilia', 'E43252017', '@starrvyaa_'],
     ['Gery Riski Danindra', 'E43251922', '@starrvyaa_'],
+    ['Ahmad Hafiz Azmi', 'E43252322', '@hafisazmi_'],
+    ['Muhammad Nawawi', 'E43251617', '@Mhmdnawawi_'],
+    ['Galih Ahmad', 'E43251817', '@Galih_'],
 ];
 ?>
 <!DOCTYPE html>
@@ -73,23 +76,28 @@ $tim = [
       <a class="btn" href="<?= h(base_url($cta)) ?>">Mulai Pantau <?= icon('arrow', 18) ?></a>
     </div>
     <div class="hero-pic">
-      
       <img src="<?= h(base_url('assets/img/kitchen-index.png')) ?>" alt="Api menyala di dapur" onerror="this.remove()">
     </div>
   </section>
 
   <section class="about" id="tentang">
     <div class="about-pic">
-      <!-- Ganti dengan foto Anda: assets/img/about-kitchen.jpg -->
-      <img src="<?= h(base_url('assets/img/imgAbout.jpg')) ?>" alt="Api kompor yang menyambar di dapur" onerror="this.remove()">
+      <img src="<?= h(base_url('assets/img/imgAbout2.jpg')) ?>" alt="Api kompor yang menyambar di dapur" onerror="this.remove()">
     </div>
     <div class="about-copy">
       <p class="eyebrow">TENTANG &amp; MASALAH</p>
       <h2>Mengapa Deteksi Dini Sangat Krusial?</h2>
-      <p>Sebagian besar kebakaran rumah bermula dari dapur yang terlambat ditangani—baik akibat kebocoran gas LPG maupun makanan yang gosong. CEKAPI hadir dengan teknologi IoT untuk mendeteksi gas, suhu panas, dan asap, sebelum bahaya membesar.</p>
-      <div class="stats">
-        <div class="stat"><b>90%</b><span>Kebakaran rumah bermula dari kelalaian di area dapur dan kebocoran gas LPG.</span></div>
-        <div class="stat"><b>24/7 <small>AKTIF</small></b><span>Pemantauan real-time tanpa henti langsung dari genggaman Anda.</span></div>
+      <p class="deskripsi-about">Sebagian besar kebakaran rumah bermula dari dapur yang terlambat ditangani—baik akibat kebocoran gas LPG maupun makanan yang gosong. CEKAPI hadir dengan teknologi IoT untuk mendeteksi gas, suhu panas, dan asap, sebelum bahaya membesar.</p>
+      
+      <div class="stats-container">
+        <div class="stat-card">
+          <h3>90%</h3>
+          <p>Kebakaran rumah bermula dari kelalaian di area dapur dan kebocoran gas LPG.</p>
+        </div>
+        <div class="stat-card">
+          <h3>24/7 <span>AKTIF</span></h3>
+          <p>Pemantauan real-time tanpa henti langsung dari genggaman Anda.</p>
+        </div>
       </div>
     </div>
   </section>
